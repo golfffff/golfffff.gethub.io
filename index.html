@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="container" style="font-family:'Kanit', sans-serif;">
+
+   <div class="row" style="background-color: #f97242;padding-bottom: 15px;">
+
+                <h1 class="text-center" style="color:rgb(255, 255, 255);">ระบบคัดกรองโรคหลอดเลือดสมอง</h1>      
+            </div>
+
+
+    <div class="row" style="background-color: #54b7c6;padding:15px 0 15px 0;color:white;">
+            <div class="col-lg-4">.</div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label for="usr">ชื่อ - สกุล:</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
+            
+              <div class="form-group">
+                <label for="pwd">อายุ:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div> 
+              <div class="form-group">
+                <label for="pwd">ส่วนสูง:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div> 
+              <div class="form-group">
+                <label for="pwd">น้ำหนัก:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div> 
+              <div class="form-group">
+                <label for="pwd">ความดัน:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div> 
+              <div class="form-group">
+                <label for="pwd">น้ำตาลในเลือก:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div> 
+              <div class="form-group">
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" checked>เป็นโรคหัวใจ
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio">ไม่เป็น
+                  </label>
+              </div>
+              <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio1" checked>สูบบุหรี่
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio1">ไม่สูบบุหรี่
+                      </label>
+                  </div>
+                  <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-floppy-disk"></span> Submit</button>
+                          <button type="submit" class="btn btn-default">reset</button>
+                        </div>
+                      </div>
+        </div>
+        <div class="col-lg-4">.</div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Recommendation</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row" style="border-bottom: 5px dotted rgb(229, 229, 229);">
+            <div class="col-*-*">
+              <h1 class="text-center" style="color:rgb(192,0,0);">มีความเสี่ยง</h1>
+            </div>
+          </div>
+          <div class="row" style="border-bottom: 5px dotted rgb(229, 229, 229);">
+            <div class="col-*-*">
+              <h2 class="text-center">BMI : 30 </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-center">คำแนะนำ</h3>
+                <ul>
+                  <li>Cardio: ระดับเบาไม่เกิน 1 ชม</li>
+                  <li>Hight Rep  : 15-20 ครั้ง / เซต</li>
+                  <li>บุหรี่ : งดสูบ</li>
+                  <li>อาหาร : เน้นผักและผลไม้ เลี่ยง ทอด มัน หวาน</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-center">สังเกตุอาการ</h3>
+                <ul>
+                  <li>ชาหรืออ่อนแรง ที่ใบหน้าและแขนขา</li>
+                  <li>พูดไม่ชัด ปากเบี้ยว มุมปากตก</li>
+                  <li>ปวดศีรษะ เวียนศีรษะทันทีทันใด</li>
+                  <li>เดินเซ ทรงตัวลำบาก</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- end modal -->
+</div> <!-- main -->
+
+</body>
+</html> 
